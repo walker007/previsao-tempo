@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body onload="main()">
+    <main>
+        <h1>Previsão do tempo</h1>
+        <div class="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Informe uma cidade" id="cidade-input">
+            <button class="search-button" onclick="pesquisar()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="previsao hidden">
+            <img id="img-previsao" />
+            <span id="temperatura"></span>
+            <span id="descricao"></span>
+        </div>
+
+        <div class="detalhes-previsao hidden">
+            <div class="umidade">
+                <i class="fa-solid fa-water"></i>
+                <div class="texto">
+                    <span id="umidade-valor"></span>
+                    <span>Umidade</span>
+                </div>
+            </div>
+
+            <div class="vento">
+                <i class="fa-solid fa-wind"></i>
+                <div class="texto">
+                    <span id="vento-velocidade"></span>
+                    <span>Velocidade do Vento</span>
+                </div>
+            </div>
+
+            <div class="sensacao-termica">
+                <i class="fa-solid fa-temperature-half"></i>
+                <div class="texto">
+                    <span id="sensacao-termica-temp"></span>
+                    <span>Sensação Térmica</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
